@@ -133,6 +133,7 @@ export const getAccessCodeAllChars = async () => {
     const codiceAccess = await getAccessCodeOneCharByOrdine(i + 1);
     const char = `${Buffer.from(codiceAccess.replaceAll(" ", ""), "hex")}`;
     result.push({ i: i + 1, codiceAccess, char });
+    console.log({ i: i + 1, codiceAccess, char });
   }
   // for (let i = 1; i <= 188; i++) {
   //   const codiceAccess = await getAccessCodeOneCharByOrdine(i);

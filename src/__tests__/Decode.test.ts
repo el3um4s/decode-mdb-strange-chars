@@ -6,6 +6,7 @@ import {
   getOneRow,
   getOneRowByChar,
   getAccessCodeOneCharByOrdine,
+  getAccessCodeAllChars,
 } from "./queryMDB";
 
 describe("test vbs is working", () => {
@@ -48,6 +49,12 @@ describe("test vbs is working", () => {
   test("getAccessCodeOneCharByOrdine", async () => {
     const result = await getAccessCodeOneCharByOrdine(157);
     // console.log(result);
+    expect(result).toBeTruthy();
+  });
+
+  test.skip("getAccessCodeAllChars", async () => {
+    const result = await getAccessCodeAllChars();
+    console.log(result);
     expect(result).toBeTruthy();
   });
 });
