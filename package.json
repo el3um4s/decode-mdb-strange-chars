@@ -1,7 +1,7 @@
 {
-  "name": "@el3um4s/typescript-npm-package-starter",
-  "version": "0.0.11",
-  "description": "Typescript NPM Package Starter",
+  "name": "@el3um4s/decode-mdb-strange-chars",
+  "version": "0.0.1",
+  "description": "A workaround to solve the character decoding problem of .mdb files (MS Access)",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/el3um4s/typescript-npm-package-starter.git"
+    "url": "git+https://github.com/el3um4s/decode-mdb-strange-chars.git"
   },
   "files": [
     "lib/**/*"
@@ -27,8 +27,19 @@
   "keywords": [
     "typescript",
     "npm",
-    "template",
-    "ts"
+    "ts",
+    "mdb",
+    "msaccess",
+    "ms-access",
+    "utf8",
+    "utf-8",
+    "decoder",
+    "strange-chars",
+    "utf8-characters",
+    "utf-8-conversion-tool",
+    "utf-8-string",
+    "utf8-string",
+    "windows"
   ],
   "author": "Samuele C. De Tomasi",
   "license": "MIT",
@@ -43,10 +54,11 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/el3um4s/typescript-npm-package-starter/issues"
+    "url": "https://github.com/el3um4s/decode-mdb-strange-chars/issues"
   },
-  "homepage": "https://github.com/el3um4s/typescript-npm-package-starter#readme",
+  "homepage": "https://github.com/el3um4s/decode-mdb-strange-chars#readme",
   "devDependencies": {
+    "@el3um4s/run-vbs": "^1.1.1",
     "@types/jest": "^28.1.4",
     "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
