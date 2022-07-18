@@ -18,7 +18,7 @@ and then in a file:
 import {
   decodeString,
   decodeVBSBuffer,
-} from "@el3um4s/decodeString, decodeVBSBuffer";
+} from "@el3um4s/decode-mdb-strange-chars";
 
 import { vbs } from "./sql";
 
