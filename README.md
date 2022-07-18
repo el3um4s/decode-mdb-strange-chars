@@ -48,6 +48,4 @@ console.log(decodedChar);
 
 ### Acknowledgments
 
-Il mio problema: poter leggere i file mdb anche quando sono presenti dei caratteri strani. Questo package è di supporto a [node-mdb](https://github.com/el3um4s/node-mdb). Serve come passaggio intermedio per convertire i caratteri ottenuti da [run-vbs](https://github.com/el3um4s/run-vbs). Lo tengo come package separato per poterlo usare anche in altri progetti. E, sopratutto, per poterlo testare in maniera indipendente e nel contempo mantenere pulito il codice di _node-mdb_.
-
-My problem: reading mdb files even when strange characters are present. This package is meant for [node-mdb](https://github.com/el3um4s/node-mdb). It serves as an intermediate step to convert the characters obtained from [run-vbs](https://github.com/el3um4s/run-vbs). I keep it as a separate package so that I can use it in other projects as well. And, above all, to be able to test it independently and at the same time keep the _node-mdb_ code clean.
+My problem is reading mdb files even when there are strange characters. This package is meant for [node-mdb](https://github.com/el3um4s/node-mdb). It serves as an intermediate step to convert the characters obtained from [run-vbs](https://github.com/el3um4s/run-vbs). I keep it as a separate package so that I can use it in other projects as well. And, above all, to be able to test it independently and, at the same time, keep the _node-mdb_ code clean.
