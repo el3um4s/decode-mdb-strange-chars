@@ -1,6 +1,6 @@
 import { dictionaryAccessToUTF8 } from "./dictionaryAccessToUTF8";
 
-const charFromBuffer = async (b: string[]): Promise<string> => {
+const charFromBuffer = (b: string[]): string => {
   const str: { type: number; data: number[] } = JSON.parse(
     JSON.stringify(b[0])
   );
@@ -8,7 +8,7 @@ const charFromBuffer = async (b: string[]): Promise<string> => {
   return result;
 };
 
-const replaceChars = async (text: string) => {
+const replaceChars = (text: string) => {
   let textReplaced = ` ${text} `;
   dictionaryAccessToUTF8.forEach((c) => {
     textReplaced = textReplaced.replaceAll(
@@ -19,14 +19,14 @@ const replaceChars = async (text: string) => {
   return textReplaced;
 };
 
-export const decodeString = async (text: string): Promise<string> => {
-  const textReplaced = await replaceChars(text);
+export const decodeString = (text: string): string => {
+  const textReplaced = replaceChars(text);
   const result = Buffer.from(textReplaced.replaceAll(" ", ""), "hex");
   return result.toString("utf8");
 };
 
-export const decodeVBSBuffer = async (buffer: string[]): Promise<string> => {
-  const str = await charFromBuffer(buffer);
-  const result = await decodeString(str);
+export const decodeVBSBuffer = (buffer: string[]): string => {
+  const str = charFromBuffer(buffer);
+  const result = decodeString(str);
   return result;
 };

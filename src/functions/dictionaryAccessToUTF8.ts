@@ -207,7 +207,7 @@ export const dictionaryAccessToUTF8 = [
     description: "FEMININE ORDINAL INDICATOR",
   },
   {
-    win: "a6",
+    win: "a5",
     utf: "c3 91",
     char: "Ñ",
     description: "LATIN CAPITAL LETTER N WITH TILDE",

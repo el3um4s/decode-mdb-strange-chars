@@ -5,7 +5,6 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "start": "node lib/index.js",
     "build": "tsc",
     "lint": "eslint . --ext .ts",
     "test": "jest --config jestconfig.json",
