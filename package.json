@@ -1,6 +1,6 @@
 {
   "name": "@el3um4s/decode-mdb-strange-chars",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A workaround to solve the character decoding problem of .mdb files (MS Access)",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
